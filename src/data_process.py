@@ -2,6 +2,10 @@ from sklearn.datasets import fetch_openml
 import numpy as np
 import torch
 
+# Constants for maintainability
+TRAIN_SIZE = 60000
+PIXEL_MAX_VALUE = 255.0
+
 # Load data and assign to the variable mnist
 mnist = fetch_openml("mnist_784", version=1)
 
